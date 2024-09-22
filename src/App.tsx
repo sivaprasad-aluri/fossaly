@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Box, Typography } from "@mui/material";
+import TaskTemplate from "./components/common/TaskTemplate";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box p={4}>
+      <Typography
+        variant="h4"
+        textTransform="uppercase"
+        textAlign="center"
+        py={3}
+      >
+        {" "}
+        Fossaly{" "}
+      </Typography>
+      <TaskTemplate
+        taskHeader="Product Backlog"
+        taskContent="fixing the main content"
+        taskPoints="3"
+      />
+    </Box>
   );
 }
 
