@@ -10,7 +10,11 @@ export default function MainHeader() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, mr: 2 }}>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, mr: 2, fontWeight: 600, letterSpacing: "2px" }}
+          >
             Fossaly
           </Typography>
           <Avatar sx={{ bgcolor: "primary" }}>F</Avatar>
